@@ -1,0 +1,12 @@
+{
+    "name": "ddliu/validator",
+    "description": "Form validator",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "dong",
+            "email": "ddliuhb@gmail.com"
+        }
+    ],
+    "require": {}
+}
