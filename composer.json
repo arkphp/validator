@@ -8,5 +8,10 @@
             "email": "ddliuhb@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+          "ddliu\\validator\\": "src/"
+        }
+    }
 }
