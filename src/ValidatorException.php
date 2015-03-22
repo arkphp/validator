@@ -2,12 +2,12 @@
 /**
  * Validator
  *
- * @link http://github.com/ddliu/php-validator
+ * @link http://github.com/arkphp/validator
  * @copyright  Liu Dong (http://codecent.com)
  * @license MIT
  */
 
-namespace ddliu\validator;
+namespace Ark\Validator;
 
 /**
  * Exception for mustValid

@@ -2,13 +2,13 @@
 /**
  * Validator
  *
- * @link http://github.com/ddliu/php-validator
+ * @link http://github.com/arkphp/validator
  * @copyright  Liu Dong (http://codecent.com)
  * @license MIT
  */
 
-use ddliu\validator\Validator;
-use ddliu\validator\ValidatorException;
+use Ark\Validator\Validator;
+use Ark\Validator\ValidatorException;
 
 date_default_timezone_set('UTC');
 

@@ -1,5 +1,5 @@
 {
-    "name": "ddliu/validator",
+    "name": "ark/validator",
     "description": "Form validator",
     "license": "MIT",
     "authors": [
@@ -11,7 +11,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-          "ddliu\\validator\\": "src/"
+          "Ark\\Validator\\": "src/"
         }
     }
 }

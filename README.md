@@ -1,3 +1,3 @@
-# php-validator
+# validator
 
 PHP validator borrowed from Lavarel.
