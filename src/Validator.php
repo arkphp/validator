@@ -199,7 +199,7 @@ class Validator
                             ':field' => $name,
                             ':rule' => $ruleName,
                             ':options' => $options,
-                            ':value' => $this->data[$name],
+                            ':value' => isset($this->data[$name])?$this->data[$name]:null,
                         ), self::$params);
 
                         self::$params = array();
