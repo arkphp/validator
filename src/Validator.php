@@ -439,4 +439,9 @@ class Validator
         return !(isset($data[$options]) && $data[$field] === $data[$options]);
     }
 
+    static public function isAny($data, $field, $options)
+    {
+        return true;
+    }
+
 }

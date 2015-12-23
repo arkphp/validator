@@ -15,7 +15,7 @@ date_default_timezone_set('UTC');
 class ValidatorTest extends PHPUnit_Framework_TestCase{
 
     public function testRules()
-    {return;
+    {
         $successData = array(
             'required' => 'hello',
             'in' => 'dog',
@@ -163,5 +163,17 @@ class ValidatorTest extends PHPUnit_Framework_TestCase{
         $this->assertTrue($errors->has('age'));
         $this->assertContains('gender', $errors->first('gender'));
         $this->assertContains('age', $errors->first('age'));
+    }
+
+    public function testAny() {
+        $validator = new Validator(array(
+            'key1' => 'value1',
+            'key2' => '',
+        ), array (
+            'key1' => 'any',
+            'key2' => 'any',
+        ));
+
+        $this->assertTrue($validator->valid());
     }
 }
