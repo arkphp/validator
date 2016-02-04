@@ -176,4 +176,17 @@ class ValidatorTest extends PHPUnit_Framework_TestCase{
 
         $this->assertTrue($validator->valid());
     }
+
+    public function testCustomMessage() {
+        $validator = new Validator(array(
+            'key1' => 'value1',
+        ), array(
+            'key2' => 'required',
+        ), array(
+            'key2' => 'custom message'
+        ));
+
+        $errors = $validator->getErrors();
+        $this->assertEquals('custom message', $errors->first('key2'));
+    }
 }

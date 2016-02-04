@@ -116,7 +116,7 @@ class Validator
         return $this;
     }
 
-    public function addFieldMessage($name, $message)
+    public function addFieldMessage($name, $message = null)
     {
         if (is_array($name)) {
             foreach ($name as $key => $value) {
